@@ -1,0 +1,86 @@
+.carousel-picture-content {
+  *{
+    text-decoration: none;
+  }
+
+  &__img {
+    max-height: 470px;
+    height: 100%;
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 80px;
+    &::after {
+      content: '';
+      border-bottom: 2px solid $red;
+      width: 110px;
+      position: absolute;
+      bottom: -40px;
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 25px;
+    padding-bottom: 35px;
+  }
+
+  &__text {
+    padding-bottom: 30px;
+  }
+
+  &__links {
+    color: $primary;
+  }
+
+  &__tel,
+  &__email {
+    padding-left: 10px;
+    color: $primary;
+  }
+
+  &__tel {
+    white-space: nowrap;
+  }
+
+  &__email {
+    color: $red;
+    font-size: 15px;
+  }
+
+  &__mail {
+    width: 35%;
+  }
+
+  &__buttons {
+    bottom: inherit;
+    top: 20px;
+    left: 40px;
+
+    button {
+      width: 1px;
+      height: 5px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid grey;
+      margin-right: 7px;
+    }
+
+    .active {
+      background: black;
+      border-radius: 50%;
+    }
+  }
+  .carousel-indicators>button{
+    height: 5px;
+    background: red;
+  }
+}
+._general__img{
+  width: 300px;
+}
